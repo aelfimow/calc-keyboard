@@ -154,8 +154,8 @@ static uint8_t key_mask = 0U;
  */
 int main(void)
 {
-	/* Disable interrupts */
-	cli();
+    /* Disable interrupts */
+    cli();
 
     /* Initialize GPIOs for key rows and columns */
     {
@@ -231,6 +231,6 @@ int main(void)
         key_row = (key_row > 4U) ? 0U : (key_row + 1U);
     }
 
-	return 0;
+    return 0;
 }
 
